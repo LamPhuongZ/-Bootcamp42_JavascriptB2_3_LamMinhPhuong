@@ -8,7 +8,7 @@ let result = 0;
 let sum = 0;
 let CHU_VI = 0;
 let DIEN_TICH = 0;
-let average = 0;
+let average = 0; // Trung bình
 
 // Bài tập 1: Tính tiền lương nhân viên
 // Lắng nghe sự kiện user click vào button tính nào
@@ -22,7 +22,7 @@ document.getElementById("calculate").onclick = function () {
 
     // B3: Hiển thị kết quả ra giao diện
     document.getElementById("result-wrapper").style.display = "block";
-    document.getElementById("result-b1").innerHTML = Intl.NumberFormat('vn-VN').format(result);
+    document.getElementById("result-b1").innerHTML = Intl.NumberFormat('vn-VN').format(result) + " VND";
 };
 // Kết thúc bài tập 1
 
@@ -70,7 +70,7 @@ document.getElementById("currency__exchange").onclick = function () {
 
     // B3: Hiển thị kết quả ra giao diện
     document.getElementById("result-exchange").style.display = "block";
-    document.getElementById("result-b3").innerHTML = Intl.NumberFormat('vn-VN').format(result);
+    document.getElementById("result-b3").innerHTML = numberA + " * 23.500" + " = " + Intl.NumberFormat('vn-VN').format(result) + " VND";
 };
 // Kết thúc bài tập 3
 
