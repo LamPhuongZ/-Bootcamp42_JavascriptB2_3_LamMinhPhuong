@@ -5,8 +5,6 @@ let numberB = 0;
 
 // output
 let result = 0;
-let CHU_VI = 0;
-let DIEN_TICH = 0;
 
 // Bài tập 1: Tính tiền lương nhân viên
 // Lắng nghe sự kiện user click vào button tính nào
@@ -82,10 +80,10 @@ document.getElementById("count").onclick = function () {
 
     // B2: Tính toán
     // Diện tích
-    DIEN_TICH = numberA * numberB;
+    let DIEN_TICH = numberA * numberB;
 
     // Chu vi
-    CHU_VI = (numberA + numberB) * 2;
+    let CHU_VI = (numberA + numberB) * 2;
 
     // B3: Hiển thị kết quả ra giao diện
     document.getElementById("result-count").style.display = "block";
