@@ -5,10 +5,8 @@ let numberB = 0;
 
 // output
 let result = 0;
-let sum = 0;
 let CHU_VI = 0;
 let DIEN_TICH = 0;
-let average = 0; // Trung bình
 
 // Bài tập 1: Tính tiền lương nhân viên
 // Lắng nghe sự kiện user click vào button tính nào
@@ -28,6 +26,8 @@ document.getElementById("calculate").onclick = function () {
 
 // Bài tập 2: Tính giá trị trung bình
 document.getElementById("average").onclick = function () {
+    let average = 0; // Trung bình
+
     // B1: Lấy giá trị của các inputs
     let number1 = document.getElementById("number1").value;
     let number2 = document.getElementById("number2").value;
@@ -95,6 +95,8 @@ document.getElementById("count").onclick = function () {
 
 // Bài tập 5: Tính tổng 2 ký sô
 document.getElementById("sum").onclick = function () {
+    let sum = 0;
+
     // B1: Lấy giá trị của các inputs
     numberA = document.getElementById("sum__number").value;
 
